@@ -3,9 +3,9 @@ on:
   push:
     branches:
       - master
-job:
+jobs:
   deploy:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       #faire git clone du projet pour qu'on puisse détaillé
       - uses: actions/checkout@v2
